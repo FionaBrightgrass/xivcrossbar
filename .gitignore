@@ -1,5 +1,3 @@
-
-*.xml
 config.ini
-data/hotbar/asura
 resources/icons/custom
+data/hotbar/asura

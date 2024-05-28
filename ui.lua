@@ -587,8 +587,11 @@ function ui:load_action(player_hotbar, environment, hotbar, slot, action, player
             -- display mp cost
             if crossbar_action.mp_cost ~= nil and crossbar_action.mp_cost ~= 0 then
                 self.hotbars[hotbar].slot_cost[slot]:color(self.theme.mp_cost_color_red, self.theme.mp_cost_color_green, self.theme.mp_cost_color_blue)
-                self.hotbars[hotbar].slot_cost[slot]:text(tostring(crossbar_action.mp_cost))
-
+                if(settings.Hotbar.HideActionCost == true) then
+                    self.hotbars[hotbar].slot_cost[slot]:text("")
+                else    
+                    self.hotbars[hotbar].slot_cost[slot]:text(tostring(crossbar_action.mp_cost))
+                end
                 if player_vitals.mp < crossbar_action.mp_cost then
                     self.disabled_slots.no_vitals[action.action] = true
                     is_disabled = true
