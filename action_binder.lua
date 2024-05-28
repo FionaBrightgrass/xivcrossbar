@@ -6,7 +6,6 @@ local icon_extractor = require('ui/icon_extractor')
 local kebab_casify = require('libs/kebab_casify')
 local crossbar_abilities = require('resources/crossbar_abilities')
 local crossbar_spells = require('resources/crossbar_spells')
-
 texts = require('texts')
 
 local action_binder = {}

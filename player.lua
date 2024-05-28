@@ -30,7 +30,7 @@ local res = require('resources')
 local storage = require('storage')
 local action_manager = require('action_manager')
 local mount_roulette = require('libs/mountroulette/mountroulette')
-
+settings = config.load(defaults)
 local player = {}
 
 player.name = ''
@@ -200,7 +200,11 @@ function player:load_from_file(storage_file)
                             end
 
                         elseif tag.name == 'alias' then
-                            new_action.alias = tag.children[1].value
+                            if (settings.Hotbar.HideActionName == true) then ------------here yo
+                                new_action.alias = ' '
+                            else
+                                new_action.alias = tag.children[1].value
+                            end
                         elseif tag.name == 'icon' then
                             new_action.icon = tag.children[1].value
                         elseif tag.name == 'equip_slot' then

@@ -28,8 +28,10 @@
 
 local icon_extractor = require('ui/icon_extractor')
 local kebab_casify = require('libs/kebab_casify')
-local crossbar_abilities = require('resources/crossbar_abilities')
+local defaults = require('defaults')
+settings = config.load(defaults)
 local crossbar_spells = require('resources/crossbar_spells')
+local crossbar_abilities = require('resources/crossbar_abilities')
 
 local ui = {}
 
@@ -594,7 +596,11 @@ function ui:load_action(player_hotbar, environment, hotbar, slot, action, player
             -- display tp cost
             elseif crossbar_action.tp_cost ~= nil and crossbar_action.tp_cost ~= 0 then
                 self.hotbars[hotbar].slot_cost[slot]:color(self.theme.tp_cost_color_red, self.theme.tp_cost_color_green, self.theme.tp_cost_color_blue)
-                self.hotbars[hotbar].slot_cost[slot]:text(tostring(crossbar_action.tp_cost))
+                if(settings.Hotbar.HideActionCost == true) then
+                    self.hotbars[hotbar].slot_cost[slot]:text("")
+                else          
+                    self.hotbars[hotbar].slot_cost[slot]:text(tostring(crossbar_action.tp_cost))
+                end
 
                 if player_vitals.tp < crossbar_action.tp_cost then
                     self.disabled_slots.no_vitals[action.action] = true
