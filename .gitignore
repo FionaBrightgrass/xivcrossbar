@@ -1,0 +1,7 @@
+
+*.xml
+config.ini
+images/extracted_icons
+images/icons/iconpacks/unreleased
+resources/crossbar_abilities.lua
+resources/crossbar_spells.lua
