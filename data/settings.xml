@@ -34,8 +34,6 @@
             <HideRecastAnimation>false</HideRecastAnimation>
             <HideRecastText>false</HideRecastText>
             <Number>3</Number>
-            <hidempcost>true</hidempcost>
-            <hidetpcost>true</hidetpcost>
         </Hotbar>
         <SkillchainIndicator>
             <Opacity>220</Opacity>
