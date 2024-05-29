@@ -1,5 +1,5 @@
 config.ini
-*/resources/*
-*/data/*
-*/images/icons/custom/*
-*/data/hotbar/*
+resources/
+data/
+images/icons/custom/
+data/hotbar/
