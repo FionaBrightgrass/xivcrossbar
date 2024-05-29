@@ -29,16 +29,16 @@
                 <target>me</target>
                 <type>ja</type>
                 <action>Chocobo Jig II</action>
-                <alias>Chocobo Jig II</alias>
+                <alias>Chocobo</alias>
 
             </slot_6>
-            <slot_1>
+            <slot_3>
                 <target>me</target>
                 <type>ja</type>
-                <action>Presto</action>
-                <alias>Presto</alias>
+                <action>No Foot Rise</action>
+                <alias>No Foot</alias>
 
-            </slot_1>
+            </slot_3>
             <slot_4>
                 <target>me</target>
                 <type>ja</type>
@@ -50,7 +50,7 @@
                 <target>me</target>
                 <type>ja</type>
                 <action>Warding Circle</action>
-                <alias>Warding Circle</alias>
+                <alias>Ward</alias>
 
             </slot_5>
             <slot_8>
@@ -64,16 +64,16 @@
                 <target>me</target>
                 <type>mount</type>
                 <action>Chocobo</action>
-                <alias>Chocobo</alias>
+                <alias>Mount</alias>
 
             </slot_2>
-            <slot_3>
+            <slot_1>
                 <target>me</target>
                 <type>ja</type>
-                <action>No Foot Rise</action>
-                <alias>No Foot Rise</alias>
+                <action>Presto</action>
+                <alias>Presto</alias>
 
-            </slot_3>
+            </slot_1>
 
         </hotbar_3>
         <hotbar_2>
@@ -82,35 +82,28 @@
                 <target>t</target>
                 <type>ja</type>
                 <action>Feather Step</action>
-                <alias>Feather Step</alias>
+                <alias>Featherstep</alias>
 
             </slot_7>
             <slot_6>
                 <target>t</target>
                 <type>ja</type>
                 <action>Box Step</action>
-                <alias>Box Step</alias>
+                <alias>Boxstep</alias>
 
             </slot_6>
-            <slot_3>
-                <target>me</target>
+            <slot_1>
+                <target>t</target>
                 <type>ja</type>
-                <action>Climactic Flourish</action>
-                <alias>Climactic Flourish</alias>
+                <action>Wild Flourish</action>
+                <alias>Wild Fl.</alias>
 
-            </slot_3>
-            <slot_4>
-                <target>me</target>
-                <type>ja</type>
-                <action>Building Flourish</action>
-                <alias>Building Flourish</alias>
-
-            </slot_4>
+            </slot_1>
             <slot_5>
                 <target>t</target>
                 <type>ws</type>
                 <action>Evisceration</action>
-                <alias>Evisceration</alias>
+                <alias>Eviscerate</alias>
 
             </slot_5>
             <slot_8>
@@ -124,16 +117,16 @@
                 <target>me</target>
                 <type>ja</type>
                 <action>Reverse Flourish</action>
-                <alias>Reverse Flourish</alias>
+                <alias>Reverse Fl.</alias>
 
             </slot_2>
-            <slot_1>
-                <target>t</target>
+            <slot_3>
+                <target>me</target>
                 <type>ja</type>
-                <action>Wild Flourish</action>
-                <alias>Wild Flourish</alias>
+                <action>Climactic Flourish</action>
+                <alias>Climax Fl.</alias>
 
-            </slot_1>
+            </slot_3>
 
         </hotbar_2>
         <name>Basic</name>
@@ -153,48 +146,48 @@
                 <alias>Meditate</alias>
 
             </slot_6>
-            <slot_3>
+            <slot_1>
                 <target>me</target>
                 <type>ja</type>
-                <action>Contradance</action>
-                <alias>Contradance</alias>
+                <action>Divine Waltz II</action>
+                <alias>Divine II</alias>
 
-            </slot_3>
+            </slot_1>
             <slot_4>
                 <target>stal</target>
                 <type>ja</type>
                 <action>Curing Waltz</action>
-                <alias>Curing Waltz</alias>
+                <alias>Curing III</alias>
 
             </slot_4>
             <slot_5>
                 <target>me</target>
                 <type>ja</type>
                 <action>Sekkanoki</action>
-                <alias>Sekkanoki</alias>
+                <alias>Sekkano</alias>
 
             </slot_5>
             <slot_8>
                 <target>me</target>
                 <type>ja</type>
                 <action>Haste Samba</action>
-                <alias>Haste Samba</alias>
+                <alias>Haste</alias>
 
             </slot_8>
             <slot_2>
                 <target>me</target>
                 <type>ja</type>
                 <action>Healing Waltz</action>
-                <alias>Healing Waltz</alias>
+                <alias>Healing</alias>
 
             </slot_2>
-            <slot_1>
+            <slot_3>
                 <target>me</target>
                 <type>ja</type>
-                <action>Divine Waltz II</action>
-                <alias>Divine Waltz II</alias>
+                <action>Contradance</action>
+                <alias>Contra D</alias>
 
-            </slot_1>
+            </slot_3>
 
         </hotbar_1>
 
