@@ -28,15 +28,15 @@
             <slot_6>
                 <target>me</target>
                 <type>ja</type>
-                <action>Chocobo Jig II</action>
-                <alias>Chocobo</alias>
+                <action>No Foot Rise</action>
+                <alias>No Foot Rise</alias>
 
             </slot_6>
             <slot_3>
                 <target>me</target>
                 <type>ja</type>
-                <action>No Foot Rise</action>
-                <alias>No Foot</alias>
+                <action>Chocobo Jig II</action>
+                <alias>Chocobo Jig II</alias>
 
             </slot_3>
             <slot_4>
@@ -49,8 +49,8 @@
             <slot_5>
                 <target>me</target>
                 <type>ja</type>
-                <action>Warding Circle</action>
-                <alias>Ward</alias>
+                <action>Third Eye</action>
+                <alias>Third Eye</alias>
 
             </slot_5>
             <slot_8>
@@ -92,13 +92,20 @@
                 <alias>Boxstep</alias>
 
             </slot_6>
-            <slot_1>
-                <target>t</target>
+            <slot_3>
+                <target>me</target>
                 <type>ja</type>
-                <action>Wild Flourish</action>
-                <alias>Wild Fl.</alias>
+                <action>Climactic Flourish</action>
+                <alias>Climax Fl.</alias>
 
-            </slot_1>
+            </slot_3>
+            <slot_4>
+                <target>me</target>
+                <type>ja</type>
+                <action>Grand Pas</action>
+                <alias>Grand Pas</alias>
+
+            </slot_4>
             <slot_5>
                 <target>t</target>
                 <type>ws</type>
@@ -120,13 +127,13 @@
                 <alias>Reverse Fl.</alias>
 
             </slot_2>
-            <slot_3>
-                <target>me</target>
+            <slot_1>
+                <target>t</target>
                 <type>ja</type>
-                <action>Climactic Flourish</action>
-                <alias>Climax Fl.</alias>
+                <action>Wild Flourish</action>
+                <alias>Wild Fl.</alias>
 
-            </slot_3>
+            </slot_1>
 
         </hotbar_2>
         <name>Basic</name>
@@ -146,18 +153,18 @@
                 <alias>Meditate</alias>
 
             </slot_6>
-            <slot_1>
+            <slot_3>
                 <target>me</target>
                 <type>ja</type>
-                <action>Divine Waltz II</action>
-                <alias>Divine II</alias>
+                <action>Contradance</action>
+                <alias>Contra D</alias>
 
-            </slot_1>
+            </slot_3>
             <slot_4>
-                <target>stal</target>
+                <target>stpt</target>
                 <type>ja</type>
-                <action>Curing Waltz</action>
-                <alias>Curing III</alias>
+                <action>Curing Waltz III</action>
+                <alias>Cure III</alias>
 
             </slot_4>
             <slot_5>
@@ -181,13 +188,13 @@
                 <alias>Healing</alias>
 
             </slot_2>
-            <slot_3>
+            <slot_1>
                 <target>me</target>
                 <type>ja</type>
-                <action>Contradance</action>
-                <alias>Contra D</alias>
+                <action>Divine Waltz II</action>
+                <alias>Divine II</alias>
 
-            </slot_3>
+            </slot_1>
 
         </hotbar_1>
 
