@@ -54,6 +54,7 @@
             <OffsetY>0</OffsetY>
             <SlotAlpha>100</SlotAlpha>
             <SlotSpacing>6</SlotSpacing>
+            <hotbarwidth>0</hotbarwidth>
         </Style>
         <Texts>
             <Color>
@@ -85,6 +86,7 @@
     </global>
     <brightgrass>
         <Style>
+            <OffsetX>10</OffsetX>
             <OffsetY>-140</OffsetY>
         </Style>
     </brightgrass>

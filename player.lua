@@ -59,10 +59,8 @@ function player:initialize(windower_player, server, theme_options, enchanted_ite
     self.enchanted_items = enchanted_items
 
     self.hotbar_settings.max = theme_options.hotbar_number
-
     self.vitals.mp = windower_player.vitals.mp
     self.vitals.tp = windower_player.vitals.tp
-
     storage:setup(self)
 end
 

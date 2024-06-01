@@ -7,9 +7,11 @@ local kebab_casify = require('libs/kebab_casify')
 local crossbar_abilities = require('resources/crossbar_abilities')
 local crossbar_spells = require('resources/crossbar_spells')
 texts = require('texts')
-
+local defaults = require('defaults')
+settings = config.load(defaults)
 local action_binder = {}
-
+local theme = require('theme')
+local theme_options = theme.apply(settings)
 local icon_pack = nil
 
 local get_icon_pathbase = function()
@@ -161,8 +163,8 @@ function action_binder:setup(buttonmapping, save_binding_func, delete_binding_fu
     self.title = self:create_text('Select Action Type', base_x + 50, base_y + 30)
     self.title:size(18)
     self.title:hide()
-    self.base_x = base_x or 150
-    self.base_y = base_y or 150
+    self.base_x = settings.Style.OffsetX or offset_x or base_x or 150
+    self.base_y = settings.Style.OffsetY or  offset_y or base_y or 150
     self.width =  max_width or (windower.get_windower_settings().ui_x_res - 300)
     self.height = max_height or (windower.get_windower_settings().ui_y_res - 300)
     self.state = states.HIDDEN
@@ -187,7 +189,6 @@ function action_binder:setup(buttonmapping, save_binding_func, delete_binding_fu
     self.button_y_pressed = false
     self.trigger_left_pressed = false
     self.trigger_right_pressed = false
-
     icon_pack = theme_options.iconpack
 
     windower.prim.create('dialog_bg')
@@ -201,6 +202,7 @@ function action_binder:setup(buttonmapping, save_binding_func, delete_binding_fu
     windower.prim.set_position('button_entry_bg', self.base_x + 150, self.base_y + 150)
     windower.prim.set_size('button_entry_bg', self.width - 300, self.height - 300)
     windower.prim.set_visibility('button_entry_bg', false)
+    self:reload()
 end
 
 function action_binder:reset_state()
@@ -2427,6 +2429,10 @@ windower.register_event('mouse', function(type, x, y, delta, blocked)
         end
     end
 end)
+
+function action_binder:reload()
+    self:set_ui_offset_callback(settings.Style.OffsetX, settings.Style.OffsetY)
+end
 
 -- HELPER FUNCTIONS
 function sortByName(a, b)
