@@ -2176,8 +2176,8 @@ function get_effusions(job_id, job_level)
     if (job_id == 22) then
         for i, effusion in ipairs(effusions) do
             if (job_level >= effusion.level) then
-                local crossbar_effusion = crossbar_abilities[kebab_casify(command.name)]
-                local target_type = res.job_abilities[command.id].targets
+                local crossbar_effusion = crossbar_abilities[kebab_casify(effusion.name)]
+                local target_type = res.job_abilities[effusion.id].targets
                 local icon_path = 'ui/red-x.png'
                 local icon_offset = 0
                 local icon_overridden = true
