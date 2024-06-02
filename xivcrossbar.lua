@@ -120,6 +120,9 @@ function set_hotkey(hotbar, slot, action_type, action, target, command, icon)
         action = 'lastsynth'
         alias = 'Last Synth'
         icon = 'synth'
+    elseif (action == 'Contradance') then
+        --drop saber dance
+        windower.packets.inject_outgoing(0xF1,string.char(0xF1,0x04,0,0,410%256,math.floor(410/256),0,0)) 
     end
 
     if (command ~= nil) then

@@ -129,8 +129,8 @@ end
 -- setup positions and dimensions for env_chooser
 function env_chooser:setup_metrics(theme_options)
     self.hotbar_width = (400 + theme_options.slot_spacing * 9)
-    self.pos_x = (windower.get_windower_settings().ui_x_res / 2) - (self.hotbar_width / 2)
-    self.pos_y = (windower.get_windower_settings().ui_y_res - 120)
+    self.pos_x = (windower.get_windower_settings().ui_x_res / 2) - (self.hotbar_width / 2) + theme_options.offset_x
+    self.pos_y = (windower.get_windower_settings().ui_y_res - 120) + theme_options.offset_y
 
     self.slot_spacing = theme_options.slot_spacing
 

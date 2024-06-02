@@ -1,7 +1,4 @@
 config.ini
-resources/
 data/
-images/icons/custom/
-data/hotbar/
-data/settings.xml
+data/hotbar/*
 data
