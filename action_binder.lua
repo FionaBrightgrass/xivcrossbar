@@ -1724,7 +1724,6 @@ function action_binder:display_rune_enchantment_selector()
 
             ability_list:append({id = id, name = name, icon = icon_path, icon_offset = icon_offset, data = {target_type = target_type}})
         end
-        ability_list:append({id = id, name = name, icon = icon_path, data = {target_type = target_type}})
     end
 
     self.selector:display_options(ability_list)
@@ -2122,6 +2121,43 @@ function get_dances(job_id, job_level)
     end
 
     return dance_list
+end
+
+function get_wards(job_id, job_level)
+    local all_abilities = res.job_abilities
+
+    local wards = L{
+        {name = 'Vallation', id = 366, level = 10},
+        {name = 'Pflug', id = 369, level = 40},
+        {name = 'Valiance', id = 371, level = 50},
+        {name = 'Battuta', id = 376, level = 75},
+        {name = 'Liement', id = 373, level = 85}
+    }
+
+    ward_list = L{}
+
+    if (job_id == 22) then
+        for i, ward in ipairs(wards) do
+            if (job_level >= ward.level) then
+                local crossbar_ward = crossbar_abilities[kebab_casify(ward.name)]
+                local target_type = res.job_abilities[ward.id].targets
+                local icon_path = 'ui/red-x.png'
+                local icon_offset = 0
+                local icon_overridden = true
+                if (crossbar_ward ~= nil) then
+                    icon_path, icon_overridden = maybe_get_custom_icon(crossbar_ward.default_icon, crossbar_ward.custom_icon)
+                    if (icon_overridden) then
+                        icon_offset = 0
+                    else
+                        icon_offset = 4
+                    end
+                end
+                ward_list:append({id = ward.id, name = ward.name, icon = icon_path, icon_offset = icon_offset, data = {target_type = target_type}})
+            end
+        end
+    end
+
+    return ward_list
 end
 
 function get_wards(job_id, job_level)
