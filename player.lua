@@ -400,7 +400,15 @@ function player:execute_action(slot)
         windower.send_command('input ' .. command)
         return
     end
+    if action.type == 'gs' then
+        local command = 'gs equip '
 
+        if  action.target ~= nil then
+            command = command .. action.action
+        end
+        windower.send_command(command)
+        return
+    end
     if action.type == 'ex' then
         windower.send_command(action.action)
         return

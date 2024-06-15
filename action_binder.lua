@@ -89,7 +89,8 @@ local action_types = {
     ['SWITCH_TARGET'] = 30,
     ['SWITCH_CROSSBARS'] = 31,
     ['MOVE_CROSSBARS'] = 32,
-    ['SHOW_CREDITS'] = 33
+    ['SHOW_CREDITS'] = 33,
+    ['GS_MACRO'] = 34
 }
 
 local prefix_lookup = {
@@ -124,7 +125,8 @@ local prefix_lookup = {
     [action_types.MAP] = 'map',
     [action_types.LAST_SYNTH] = 'ct',
     [action_types.SWITCH_CROSSBARS] = 'ex',
-    [action_types.SWITCH_TARGET] = 'ta'
+    [action_types.SWITCH_TARGET] = 'ta',
+    [action_types.GS_MACRO] = 'gs'
 }
 
 local action_targets = {

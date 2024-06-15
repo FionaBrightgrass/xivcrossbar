@@ -559,7 +559,7 @@ function ui:load_action(player_hotbar, environment, hotbar, slot, action, player
     local icon_path = nil
 
     -- if slot has a skill (ma, ja or ws)
-    if action.type == 'ma' or action.type == 'ja' or action.type == 'ws' or action.type == 'enchanteditem' then
+    if action.type == 'ma' or action.type == 'ja' or action.type == 'ws' or action.type == 'enchanteditem' or action.type == 'pet' then
         local crossbar_action = nil
 
         if (action.type == 'ma' or action.type == 'ja' or action.typ == 'pet' or action.type == 'ws') then
@@ -604,6 +604,13 @@ function ui:load_action(player_hotbar, environment, hotbar, slot, action, player
                     self.disabled_slots.no_vitals[action.action] = true
                     is_disabled = true
                 end
+            end
+        elseif(action.type == 'pet') then
+            if skill.element ~= nil and (skill.type == 'BloodPactRage' or skill.type == 'BloodPactWard') then
+                icon_path = '/images/icons/spells/' .. string.format("%05d", get_spirit_by_element(skill.element).id) .. '.png'
+            end
+            if icon_path == nil then
+                icon_path = '/images/icons/abilities/' .. (string.format("%05d", skill.icon)) .. '.png'
             end
         end
 
