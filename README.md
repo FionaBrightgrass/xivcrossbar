@@ -8,9 +8,9 @@ Dancer/Wards now load properly.
 HideActionName now hides the action name from the icon.  
 
 
-Added:
+ADDED:  
 GearSwap Macros.
-
+  
 To add a gearswap macro, go to your Gearswap set and add the set: sets.gsmacro1 through sets.gsmacro8.  
 ```
 	   sets.gsmacro1 = {ring1 = "Facility Ring"}
