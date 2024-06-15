@@ -30,6 +30,6 @@ To set Slot4 to gsmacro 1, adjust it as follows.
                 <target>me</target>  
                 <type>gs</type>  
                 <action>gsmacro1</action>  
-                <alias>gsmacro1</alias>  
+                <alias>CallThisAnythingUWant</alias>  
             </slot_4>
 ```
