@@ -32,4 +32,19 @@ To set Slot4 to gsmacro 1, adjust it as follows.
                 <action>gsmacro1</action>  
                 <alias>CallThisAnythingUWant</alias>  
             </slot_4>
+```  
+  
+To add a cycle macro for Gearswap, follow this structure:  
+```xml
+            <slot_4>
+                <target>me</target>
+                <type>gsc</type>
+                <action>offenseMode</action>
+                <alias>Offense Mode</alias>
+            </slot_4>
+```
+```
+    ["cycle"] = { id = 1550, en = "offenseMode", res_key = "macros", type = "gsc", category = "ready", element = "Light", default_icon = "/images/icons/weapons/katana.png", custom_icon = "weaponskills/katana/zesho-meppo.png", mp_cost = 0, tp_cost = 0},
+	..
+    ["cycle8"] = { id = 1557, en = "defenseMode", res_key = "macros", type = "gsc", category = "ready", element = "Light", default_icon = "/images/icons/weapons/katana.png", custom_icon = "weaponskills/katana/zesho-meppo.png", mp_cost = 0, tp_cost = 0},
 ```
