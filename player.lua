@@ -409,6 +409,12 @@ function player:execute_action(slot)
         windower.send_command(command)
         return
     end
+    if action.type == 'gsc' then
+        local command = 'gs c cycle '
+        command = command .. action.action
+        windower.send_command(command)
+        return
+    end
     if action.type == 'ex' then
         windower.send_command(action.action)
         return
