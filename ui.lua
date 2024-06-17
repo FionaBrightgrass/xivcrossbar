@@ -370,7 +370,7 @@ function ui:setup_metrics(theme_options)
 end
 
 function ui:update_offsets(offset_x, offset_y)
-    self.pos_x = (windower.get_windower_settings().ui_x_res / 2 - 240) + (settings.Style.hotbarwidth / 2) + settings.Style.OffsetX + offset_x
+    self.pos_x = (windower.get_windower_settings().ui_x_res / 2 - 240) + settings.Style.OffsetX + offset_x
     self.pos_y = (windower.get_windower_settings().ui_y_res - 120) + settings.Style.OffsetX + offset_y
 
     for h=1,self.theme.hotbar_number,1 do
