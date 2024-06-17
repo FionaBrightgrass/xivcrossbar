@@ -48,3 +48,4 @@ To add a cycle macro for Gearswap, follow this structure:
 	..
     ["cycle8"] = { id = 1557, en = "defenseMode", res_key = "macros", type = "gsc", category = "ready", element = "Light", default_icon = "/images/icons/weapons/katana.png", custom_icon = "weaponskills/katana/zesho-meppo.png", mp_cost = 0, tp_cost = 0},
 ```
+ Change --setname-- to the set you want to cycle to, such as elementMode.
